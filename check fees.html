@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Student Login Portal</title>
+  
+  <link rel="stylesheet" href="WEBSITE.css">
+  <script src="website.js"></script>
+
+</head>
+<body>
+  <div class="navbar" id="navbar">
+    <div class="logo"><a href="mainpage.html"><img src="logo.jpg"></a></div>
+    <div class="nav-links" style="margin-right: -150px;">
+      <a href="admin.php">Manage Students</a>
+      <a href="manage.php">Manage Events</a>
+      <a href="check fees.html">Check Fees</a>
+      <a href="counselling.html">Counselling</a>
+      <a href="About us.html">About Us</a>
+      <a href="login.html">Your Account&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+    </div>
+    <div style="margin-right: 50px;">
+      <button onclick="toggleTheme()" style="background-color: #000000; color: white; padding: 10px 20px; border: none; cursor: pointer;">Switch Theme</button>
+    </div>
+  </div>
+
+  <div class="content">
+  <div class ="box">
+    <h1 style="color: hsl(40, 100%, 54%);text-align: center;">Check Fees</h1><hr><br><br>
+    <div class="box">
+      <p> Given Information about your fee status:</p>
+      <table class="info-table">
+        <tr>
+          <th>Student Name</th>
+          <td>Aum Upadhyaya</td>
+        </tr>
+        <tr>
+          <th>Student ID</th>
+          <td>25DCS137</td>
+        </tr>
+        <tr>
+          <th>Total Fees (In Rs.)</th>
+          <td>1,50,000</td>
+        </tr>
+        <tr>
+          <th>Fees Paid (In Rs.)</th>
+          <td>1,45,000</td>
+        </tr>
+        <tr>
+          <th>Remaining Fees (In Rs.)</th>
+          <td>5,000</td>
+        </tr>
+      </table>
+    </div><br><br><hr style="border: dotted 1.5px;"><br>
+    <p>Here you can check your fee status and payment details.</p>
+
+    <h3>Payment Options:</h3>
+    <div class="flex-box">
+      <a href="online_payment.html" class="box-options" style="color: #00cc1f; text-decoration: underline;">
+      
+        CLICK HERE FOR ONLINE PAYMENT
+      
+      </a>
+      <a href="offline_payment.html" class="box-options" style="color: #00cc1f; text-decoration: underline; ">
+      
+        CLICK HERE FOR OFFLINE PAYMENT
+      
+      </a>
+    </div>
+    </div><br><br>
+</div>
+</div>
+    
+</body>
+</html>

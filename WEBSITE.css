@@ -1,0 +1,480 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background-color: #ffe7c208;
+  background-image: radial-gradient(#7ee8e841, #dedda837);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: rgb(65, 105, 225);
+  color: rgba(255, 0, 0, 0.756);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  transition: top 0.3s;
+  z-index: 1000;
+}
+
+.logo {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.logo img {
+  height: 100%;             
+  width: auto;              
+  object-fit: cover;       
+}
+
+.nav-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.nav-links a {
+  color: rgb(255, 255, 0);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.nav-links a:hover {
+  color: #ffa51f;
+}
+
+.content {
+  margin-top: 80px;
+  padding: 30px;
+  text-align: left;
+  color: #000000c4;
+}
+
+.box {
+  background: rgba(255, 255, 255, 0.5); 
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+  justify-content: center;
+  text-align: left;
+  color: #0471ffbb;
+  margin: auto;
+}
+
+.box h1 {
+  color: hsl(40, 100%, 54%);
+}
+
+.box-two {
+  background: rgba(58, 56, 56, 0.01); 
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+  justify-content: center;
+  text-align: left;
+  color: #0471ffbb;
+}
+
+.flex-box {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+}
+
+.box-options {
+  background: rgba(237, 237, 237, 0.2); 
+  padding: 30px 60px;
+  border-radius: 15px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+  justify-content: center;
+  text-align: left;
+}
+
+.box-options:hover {
+  background: #d1ffd65d;
+  padding: 30px 60px;
+  border-radius: 15px;
+  box-shadow: 0 3px 25px #7f7f7f;
+  justify-content: center;
+  text-align: left;
+}
+
+#events-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: auto;
+}
+
+.Event-element {
+  background-color: #ffff002f;
+  margin: 25px;
+  padding: 15px;
+  color: #000000;
+  box-shadow: 2px 5px 5px 2px #000000;
+  border-radius: 5px;
+  flex: 0 0 42%;
+}
+
+.Event-element h3 {
+  color: #ff000092;
+}
+
+.Event-element:hover {
+  background-color: #59ed546c;
+  position: relative;
+  bottom: 5px;
+  box-shadow: 2px 5px 5px 2px #000000bf;
+}
+
+#Enroll {
+  text-decoration: none;
+  color: #000000;
+  font-weight: bold;
+}
+
+.enroll-button {
+  width: 200px;
+  padding: 10px;
+  text-align: center;
+  margin: 20px;
+  border-radius: 5px;
+  background-color: #0471ffbb;
+  box-shadow: 2px 5px 5px 2px #000000bf;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.enroll-button:hover {
+  background-color: #81ff6bc0;
+  position: relative;
+  bottom: 2px;
+}
+
+.enroll-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 500px;
+  margin: 20px auto;
+  text-align: left;
+}
+
+.enroll-form label {
+  font-weight: bold;
+  color: #0471ffbb;
+}
+
+.enroll-form input, .enroll-form select {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
+
+.enroll-form button {
+  width: 200px;
+  padding: 10px;
+  text-align: center;
+  margin: 20px auto;
+  border-radius: 5px;
+  background-color: #0471ffbb;
+  color: #000;
+  font-weight: bold;
+  border: none;
+  box-shadow: 2px 5px 5px 2px #000000bf;
+  cursor: pointer;
+}
+
+.enroll-form button:hover {
+  background-color: #81ff6bc0;
+  position: relative;
+  bottom: 2px;
+}
+
+.info-table {
+  width: 100%;
+  border: 1px solid #000000;      
+}
+
+.info-table th {
+  border: 1px solid #000000;
+  padding: 8px;
+  text-align: left;
+  color: #2e2e2e;
+  width: 25%;
+}
+
+.info-table td {
+  border: 1px solid #000000;
+  padding: 8px;
+  text-align: left;
+  color: rgb(54, 55, 146);
+}
+
+.controls { 
+  margin-bottom: 20px; 
+  display: flex; 
+  gap: 15px; 
+  align-items: center;
+}
+
+.controls input, .controls select { 
+  padding: 10px 15px; 
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  width: 250px;
+  font-size: 14px;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.controls input:focus, .controls select:focus {
+  border-color: #0471ff;
+  box-shadow: 0 0 5px rgba(4, 113, 255, 0.3);
+}
+
+.controls button {
+  padding: 10px 20px;
+  border-radius: 8px;
+  background-color: #0471ff;
+  color: white;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  transition: background-color 0.3s ease, transform 0.1s ease;
+}
+
+.controls button:hover {
+  background-color: #0056cc;
+  transform: translateY(-2px);
+}
+
+table { 
+  width: 100%; 
+  border-collapse: collapse; 
+  margin-top: 10px; 
+  background: white; 
+  border-radius: 10px;
+  overflow: hidden; 
+  box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+
+th, td { 
+  padding: 15px; 
+  text-align: left; 
+  border-bottom: 1px solid #eeeeee;
+}
+
+th {
+  background-color: rgb(65, 105, 225);
+  color: white;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+}
+
+tr:last-child td {
+  border-bottom: none;
+}
+
+tr:hover {
+  background-color: #f8faff;
+}
+
+td button {
+  padding: 6px 12px;
+  margin-right: 5px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: bold;
+  color: white;
+  transition: opacity 0.2s;
+}
+
+td button:first-of-type {
+  background-color: #28a745; 
+}
+
+td button:last-of-type {
+  background-color: #dc3545; 
+}
+
+td button:hover {
+  opacity: 0.8;
+}
+
+.modal { 
+  display: none; 
+  position: fixed; 
+  top: 50%; 
+  left: 50%; 
+  transform: translate(-50%, -50%); 
+  background: white; 
+  padding: 30px; 
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3); 
+  z-index: 1000; 
+  width: 100%;
+  max-width: 450px; 
+}
+
+.modal h3 {
+  margin-top: 0;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.modal input, .modal textarea, .modal select {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-sizing: border-box;
+  font-family: inherit;
+  font-size: 14px;
+}
+
+.modal textarea {
+  resize: vertical; 
+  min-height: 100px;
+}
+
+.modal button {
+  padding: 10px 20px;
+  margin-right: 10px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  color: white;
+}
+
+.modal button:first-of-type {
+  background-color: #0471ff; 
+}
+
+.modal button:last-of-type {
+  background-color: #6c757d; 
+}
+
+.modal button:hover {
+  opacity: 0.9;
+}
+
+body.dark-mode {
+  background-image: radial-gradient(#b9bdbd41, #65656437);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+body.dark-mode .navbar {
+  background: #111;
+  color: #fff;
+}
+
+body.dark-mode .nav-links a {
+  color: #ddd;
+}
+
+body.dark-mode .nav-links a:hover {
+  color: #ffcc00;
+}
+
+body.dark-mode .box {
+  background: rgba(50, 50, 50, 0.8);
+  color: #eee;
+  box-shadow: 0 4px 20px rgba(255,255,255,0.2);
+}
+
+body.dark-mode .box-two {
+  background: rgba(30, 30, 30, 0.8);
+  color: #eee;
+  box-shadow: 0 4px 20px rgba(255,255,255,0.2);
+}
+
+body.dark-mode .info-table th {
+  background: #333;
+  color: #fff;
+  border: 1px solid #888;
+}
+
+body.dark-mode .info-table td {
+  background: #222;
+  color: #ddd;
+  border: 1px solid #666;
+}
+
+body.dark-mode .box-options {
+  background: rgba(80, 80, 80, 0.6);
+  color: #fff;
+}
+
+body.dark-mode .box-options:hover {
+  background: rgba(120, 120, 120, 0.8);
+  box-shadow: 0 3px 25px #aaa;
+}
+
+body.dark-mode .enroll-form label {
+  color: #eee;
+}
+
+body.dark-mode .enroll-form input, 
+body.dark-mode .enroll-form select {
+  background-color: #222;
+  color: #ddd;
+  border: 1px solid #666;
+}
+
+body.dark-mode table {
+  background: #2a2a2a;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+  color: #eee;
+}
+
+body.dark-mode th {
+  background-color: #1a1a1a;
+  color: #ffcc00;
+}
+
+body.dark-mode th, body.dark-mode td {
+  border-bottom: 1px solid #444;
+}
+
+body.dark-mode tr:hover {
+  background-color: #333;
+}
+
+body.dark-mode .modal {
+  background: #2a2a2a;
+  color: #eee;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.7);
+}
+
+body.dark-mode .modal h3 {
+  color: #fff;
+}
+
+body.dark-mode .modal input, 
+body.dark-mode .modal textarea,
+body.dark-mode .modal select,
+body.dark-mode .controls input,
+body.dark-mode .controls select {
+  background-color: #1a1a1a;
+  color: #ddd;
+  border: 1px solid #555;
+}

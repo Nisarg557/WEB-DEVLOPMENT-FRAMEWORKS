@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Student Counselling Portal</title>
+  <link rel="stylesheet" href="WEBSITE.css?v=1.0">
+</head>
+<body>
+  <div class="navbar" id="navbar">
+    <div class="logo"><a href="mainpage.html"><img src="logo.jpg"></a></div>
+    <div class="nav-links" style="margin-right: -150px;">
+      <a href="admin.php">Manage Students</a>
+      <a href="manage.php">Manage Events</a>
+      <a href="check fees.html">Check Fees</a>
+      <a href="counselling.html">Counselling</a>
+      <a href="About us.html">About Us</a>
+      <a href="login.html">Your Account&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+    </div>
+    <div style="margin-right: 50px;">
+      <button onclick="toggleTheme()" style="background-color: #000000; color: white; padding: 10px 20px; border: none; cursor: pointer;">Switch Theme</button>
+    </div>
+  </div>
+
+  <div class="content">
+    <div class="box">
+      <h1 style="color: hsl(40, 100%, 54%); text-align: center;">Welcome to Counselling</h1><hr>
+      <h5>Here you can find information about counselling and manage your sessions.</h5>
+
+      <!-- Counsellor Info Section -->
+      <div class="box-two">
+        <h3 style="color: hsl(40, 100%, 54%);">COUNSELLOR INFORMATION:<hr></h3>
+        <table class="info-table">
+          <tr><th>NAME:</th><td><span id="cName">Loading...</span></td></tr>
+          <tr><th>EMAIL:</th><td><span id="cEmail">Loading...</span></td></tr>
+          <tr><th>CONTACT:</th><td><span id="cContact">Loading...</span></td></tr>
+        </table>
+      </div><br><br>
+        
+      <!-- Student Info Section -->
+      <div class="box-two">
+        <h3 style="color: hsl(40, 100%, 54%);">STUDENT INFORMATION:<hr></h3>
+        <table class="info-table">
+          <tr><th>NAME:</th><td><span id="sName">Loading...</span></td></tr>
+          <tr><th>ROLL NO:</th><td><span id="sRoll">Loading...</span></td></tr>
+          <tr><th>USERNAME:</th><td><span id="sUser">Loading...</span></td></tr>
+        </table>
+      </div><br><br>
+    </div>  
+      <br><br>
+      <div class="box-two">
+        <h3 style="color: hsl(40, 100%, 54%);">YOUR APPOINTMENTS:<hr></h3>
+        <div class="controls">
+            <button onclick="openSessionModal()">+ Book New Session</button>
+        </div>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Student Name</th>
+                    <th>Topic</th>
+                    <th>Date</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody id="sessionTableBody">
+                <!-- Data populated dynamically via JS -->
+            </tbody>
+        </table>
+      </div>
+  </div>
+
+  <!-- Hidden Modal Form (Placed safely outside layout flow) -->
+  <div id="counsellingModal" class="modal">
+      <h3 id="modalTitle" style="color: hsl(40, 100%, 54%);">Book/Edit Session</h3>
+      <input type="hidden" id="sessionId">
+      <input type="text" id="studentName" placeholder="Student Name"><br>
+      <input type="text" id="sessionTopic" placeholder="Topic (e.g., Career Advice)"><br>
+      <input type="date" id="sessionDate"><br>
+      
+      <button onclick="saveSession()">Save</button>
+      <button onclick="closeSessionModal()">Cancel</button>
+  </div>
+  
+  <script src="website.js"></script>
+  <script src="counselling.js"></script>
+</body>
+</html>

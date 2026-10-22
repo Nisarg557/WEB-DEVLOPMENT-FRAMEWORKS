@@ -1,0 +1,51 @@
+<?php
+require 'auth2.php';
+?>
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Student Portal - Main Page</title>
+  <link rel="stylesheet" href="WEBSITE.css">
+  
+</head>
+<body>
+  <div class="navbar" id="navbar">
+    <div class="logo"><a href="mainpage.html"><img src="logo.jpg"></a></div>
+    <div class="nav-links" style="margin-right: -150px;">
+      <a href="admin.php">Manage Students</a>
+      <a href="manage.php">Manage Events</a>
+      <a href="check fees.html">Check Fees</a>
+      <a href="counselling.html">Counselling</a>
+      <a href="About us.html">About Us</a>
+      <a href="login.html">Your Account&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+    </div>
+    <div style="margin-right: 50px;">
+      <button onclick="toggleTheme()" style="background-color: #000000; color: white; padding: 10px 20px; border: none; cursor: pointer;">Switch Theme</button>
+    </div>
+  </div>
+  
+  <div class="content">
+    <div class="box">
+      <h1>Welcome to the Student Portal!</h1><hr>
+      <h4>We Welcome You to our Website</h4>
+      <p>Here you can access various student services and information.</p>
+    </div>
+  <br>
+  <div class="box">
+    <h1>Events List</h1>
+    <hr>
+    <div id="events-container">
+    </div>
+    
+      <a id="Enroll" href="enroll.html">
+        <div class="enroll-button">
+          Enroll Now
+        </div>
+      </a>
+    
+  </div>
+  </div>
+  <script src="events.js" defer></script>
+  <script src="Website.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<?php
+require 'auth.php';
+requireAdmin(); // This absolutely prevents students from loading this page
+?>
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Admin Dashboard</title>
+  <link rel="stylesheet" href="WEBSITE.css?v=2.0">
+</head>
+<body>
+  <div class="navbar" id="navbar">
+    <div class="logo"><a href="admin_dashboard.php"><img src="logo.jpg"></a></div>
+    <div class="nav-links">
+      <!-- Admin Only Links -->
+      <a href="admin_students.php">Manage Students</a>
+      <a href="manage_events.php">Manage Events</a>
+      <a href="counselling_admin.php">Counselling Appointments</a>
+      <a href="logout.php">Logout</a>
+    </div>
+    <div>
+      <button onclick="toggleTheme()" style="background-color: #000; color: white; padding: 10px 20px; border: none; cursor: pointer;">Switch Theme</button>
+    </div>
+  </div>
+  
+  <div class="content">
+    <div class="box">
+      <h1>Admin Dashboard</h1><hr>
+      <h4>System Administration</h4>
+      <p>Welcome, Admin. Use the navigation bar above to manage the portal data.</p>
+    </div>
+  </div>
+  <script src="website.js"></script>
+</body>
+</html>

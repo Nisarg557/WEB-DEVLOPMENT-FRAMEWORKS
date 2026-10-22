@@ -1,0 +1,26 @@
+[
+    {
+        "id" : 1,
+        "name" : "SPOURAL",
+        "date" : "28th December",
+        "venue" : "CHARUSAT"
+    },
+    {
+        "id" : 2,
+        "name" : "COGNIZANCE",
+        "date" : "4th October",
+        "venue" : "DEPSTAR"
+    },
+    {
+        "id" : 3,
+        "name" : "iFest",
+        "date" : "27th September",
+        "venue" : "DAIICT"
+    },
+    {
+        "id" : 4,
+        "name" : "BIT N BUILD",
+        "date" : "24th September",
+        "venue" : "DDU"
+    }
+]
